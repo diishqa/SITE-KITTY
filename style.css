@@ -12,6 +12,17 @@
    box-sizing: border-box;
    font-family: "Pacifico", cursive;
 }
+
+h1, h2, h3, h4, h5, h6 {
+   font-family: "Pacifico", cursive;
+}
+
+
+.navigation .logo-nav .logo-text,
+.navigation .nav-menu .nav-link {
+   font-family: "Pacifico", cursive;
+}
+
 html {
    scroll-behavior: smooth;
 }
@@ -69,6 +80,9 @@ img {
    padding: 0 100px;
    max-width: var(--site-max-width);
 }
+.section-title, h1, h2, h3, h4, h5, h6 {
+   font-family: "Pacifico", cursive;
+}
 .section-title{
    text-align: center;
    padding: 20px 0 100px;
@@ -100,6 +114,9 @@ header .navigation{
    justify-content: space-between;
 }
 
+.navigation .logo-text {
+   font-family: "Pacifico", cursive !important;
+}
 .navigation .logo-nav .logo-text{
    color: var(--white-color);
    font-size: var(--font-size-xl);
@@ -182,6 +199,9 @@ header .navigation{
 .hero-section .hero-image {
    max-width: 200;
    margin-right: 700px;
+}
+.hero-section .title {
+   font-family: "Pacifico", cursive !important;
 }
 /* вкладка о нас стиль */
 .about-section{
@@ -436,7 +456,7 @@ header .navigation{
 
 /* стиль для связь с нами */
 .contact-section {
-   padding: 190px 100px;
+   padding: 60px  0 100px;
    background: var(--light-pink-color);
 }
 .contact-section .section-content{
@@ -446,6 +466,7 @@ header .navigation{
    justify-content: space-between;
 }
 .contact-section .section-title{
+   padding: 30px 0 120px;
    color: var(--back-color);
 }
 .contact-section .contact-info-list .contact-info{
