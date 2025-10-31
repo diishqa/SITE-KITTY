@@ -1,6 +1,11 @@
 
 /* шрифт */
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@font-face {
+   font-family: 'MyFont';
+  src: url('shrift/Chicoree\ Em.\ Bold.otf') format('truetype'); /* путь к файлу */
+   font-weight: normal;
+   font-style: normal;
+}
 * {
    margin: 0;
    padding: 0;
@@ -30,6 +35,7 @@ html {
    --font-size-l: 1.5rem;
    --font-size-xl: 2rem;
    --font-size-xxl: 2.3rem;
+   --font-size-xxxl: 3.2rem;
    /* выделение шрифта */
    --font-weight-normal: 400;
    --font-weight-medium: 500;
@@ -65,9 +71,9 @@ img {
 }
 .section-title{
    text-align: center;
-   padding: 60px 0 100px;
+   padding: 20px 0 100px;
    text-transform: uppercase;
-   font-size: var(--font-size-xl);
+   font-size: var(--font-size-xxl);
 }
 .section-title::after{
    content: "";
@@ -128,7 +134,7 @@ header .navigation{
 }
 
 .hero-section .hero-details .title{
-   font-size: var(--font-size-xxl);
+   font-size: var(--font-size-xxxl);
    color: var(--Xblue-color);
    font-family: "Pacifico", sans-serif;
 }
@@ -137,12 +143,13 @@ header .navigation{
    margin-top: 8px;
    max-width: 70%;
    font-size: var(--font-size-xl);
-   font-weight: var(--font-weight-normal);
+   font-weight: var(--font-weight-big);
 }
 
 .hero-section .hero-details .description{
    max-width: 70%;
    margin: 23px 0 40px;
+   font-weight: var(--font-weight-big);
    font-size: var(--font-size-l);
 }
 
@@ -158,7 +165,7 @@ header .navigation{
    border-radius: var(--border-radius-m);
    background: var(--blue-color);
    font-weight: var(--font-weight-medium);
-   font-size: var(--font-size-n);
+   font-size: var(--font-size-m);
    transition: 0.4s ease;
 }
 
@@ -168,12 +175,14 @@ header .navigation{
    background: transparent;
 }
 
-
 .hero-section .hero-images-wrapper {
    max-width: 900;
    margin-right: 400px;
 }
-
+.hero-section .hero-image {
+   max-width: 200;
+   margin-right: 700px;
+}
 /* вкладка о нас стиль */
 .about-section{
    display: flex;
@@ -185,6 +194,7 @@ header .navigation{
    background-size: cover;
    background-position: center;
 }
+
 .about-section .section-content{
    width: 800px;
    min-height: 700px;
@@ -197,8 +207,17 @@ header .navigation{
    display: flex;
    margin-right: 170px;
    font-size: 20px;
-
 }
+.about-section .text {
+   font-size: 24px;        
+   line-height: 1.8;        
+   letter-spacing: 1px;    
+   text-align: justify;    
+   max-width: 700px;  
+   text-align: center;    
+}
+
+
 
 /* вкладка меня стиль */
 .menu-section{
@@ -210,10 +229,17 @@ header .navigation{
 .menu-section .menu-list{
    display: flex;
    flex-wrap: wrap;
-   gap: 110px;
+   padding: 10px 0 100px;
+   gap: 20px;
    align-items: center;
    justify-content: space-between;
+}
 
+.menu-section .text{
+   font-size: 120px;      
+   line-height: 1.4;          
+   text-align: Center;    
+   max-width: 700px; 
 }
 
 .menu-section .menu-list .menu-item{
@@ -399,7 +425,7 @@ header .navigation{
 
 /* стиль для связь с нами */
 .contact-section {
-   padding: 50px 100px;
+   padding: 190px 100px;
    background: var(--light-pink-color);
 }
 .contact-section .section-content{
